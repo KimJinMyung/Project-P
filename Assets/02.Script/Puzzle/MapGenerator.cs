@@ -172,12 +172,15 @@ public class MapGenerator : MonoBehaviour
     }
 
     // 타일을 무작위로 회전시키되, 총 회전 수를 만족하도록 구현
+    // totalRotations : 전체 회전 횟수
+    // currentRotationCount : 현재 회전 횟수
     private void RandomlyRotateTilesForTotalRotations(int totalRotations, int currentRotationCount, List<TileNode> allTiles)
     {
         bool isLoop = true;
         while(isLoop)
         {
             int _currentRotationCount = currentRotationCount;
+
             while (_currentRotationCount < totalRotations)
             {
                 // 모든 타일 중에서 랜덤한 타일을 선택

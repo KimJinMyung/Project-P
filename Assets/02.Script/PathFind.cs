@@ -131,8 +131,6 @@ public class PathFind
                     {
                         //미니 게임 화면 등장
                         DebugLogger.Log("MiniGame On");
-
-
                     }
                     else
                     {
